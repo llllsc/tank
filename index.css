@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:yellow;
+    
+}
+/* .a{
+    text-decoration: none;
+
+} */
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+}
+/* div #level1,#level2,#level3,#level4{
+    display: flex;
+    text-decoration: none;
+
+} */
+.now {
+    font-size: 20px;
+}
+#all{
+    font-size: 20px;
+}
+#max {
+    font-size: 20px;
+}
+#restart {
+    margin-top: 50px;
+    width: 200px;
+    height: 45px;
+    background-color: rgba(51, 159, 220, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(170, 170, 170, 1);
+    border-radius: 3px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.map {
+    width: 650px;
+    height: 650px;
+    background: orange;
+    position: relative;
+    overflow: hidden;
+}
+
+.tank {
+    width: 40px;
+    height: 40px;
+    /* background: green; */
+    position: absolute;
+    display: inline-block;
+    background: url(./images/tank4.png);
+    background-size: 100%;
+}
+.boss{
+    width: 50px;
+    height: 50px;
+    background: rgb(128, 0, 0);
+    position: absolute;
+    display: inline-block;
+    background: url(./images/BadTank1.png);
+    background-size: 100%;
+}
+.Boss{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    display: inline-block;
+    background: url(./images/boss.png);
+    background-size: 100%;
+}
+.boss10{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    display: inline-block;
+    background: url(./images/boss10.png);
+    background-size: 100%;
+}
+.boss9{
+width: 50px;
+height: 50px;
+position: absolute;
+display: inline-block;
+background: url(./images/boss9.png);
+background-size: 100%;
+}
+.home {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('./images/home.png');
+    background-size: 100%;
+}
+.tree {
+    position: absolute;
+    display: inline-block;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    background: url('./images/tree.jpg');
+    background-size: 100%;
+}
+
+.tank0 {
+    width: 45px;
+    grid-template: 45px;
+    background: url(./images/tank3.png);
+    background-size: 100%;
+}
+
+.bullet {
+    width: 5px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    display: inline-block;
+}
+
+.softWall {
+    background: url('./images/softWall.png');
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+.hardWall {
+    background: url('./images/hardWall.png');
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: inline-block;
+}
+.bomb{
+    background: url('./images/6.gif');
+    position: absolute;
+width: 40px;
+height: 40px;
+left: 300px;
+top: 300px;
+/* display: block; */
+}
