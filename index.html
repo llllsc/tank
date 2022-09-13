@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <title>坦克</title>
+</head>
+
+<body>
+    <audio src="./sound/explosion_2.ogg" id="zha"> </audio>
+    <audio src="./sound/game_over.ogg" id="over"> </audio>
+    <audio src="./sound/bullet_shot.ogg" id="shot"></audio>
+    <audio autoplay="autoplay" preload="auto" src="./sound/stage_start.ogg"></audio>
+
+    <div class="map">
+        <!-- <img src="./images/10.gif" id="picture"> -->
+    </div>
+    <div id="left">
+        <p class="now">当前是第1关</p>
+        <p id="all">总共16关</p>
+        <p id="max">已通过: 0关</p>
+        请选择关卡 
+        <!-- <button onclick="f1()">第一关</button> -->
+        <div id="level1">
+            <button onclick="f(0)">第1关</button>
+            <button onclick="f(1)">第2关</button>
+            <button onclick="f(2)">第3关</button>
+            <button onclick="f(3)">第4关</button>
+            <!-- <button><a href="index.html?level=1&Level=>第2关</a></button>
+            <button><a href="index.html?level=2">第3关</a></button>
+            <button><a href="index.html?level=3">第4关</a></button> -->
+        </div>
+        <div id="level2">
+            <!-- <button><a href="index.html?level=4">第5关</a></button>
+            <button><a href="index.html?level=5">第6关</a></button>
+            <button><a href="index.html?level=6">第7关</a></button>
+            <button><a href="index.html?level=7">第8关</a></button> -->
+            <button onclick="f(4)">第5关</button>
+            <button onclick="f(5)">第6关</button>
+            <button onclick="f(6)">第7关</button>
+            <button onclick="f(7)">第8关</button>
+        </div>
+        <div id="level3">
+            <!-- <button><a href="index.html?level=8">第9关</a></button>
+            <button><a href="index.html?level=9">第10关</a></button>
+            <button><a href="index.html?level=10">第11关</a></button>
+            <button><a href="index.html?level=11">第12关</a></button> -->
+            <button onclick="f(8)">第9关</button>
+            <button onclick="f(9)">第10关</button>
+            <button onclick="f(10)">第11关</button>
+            <button onclick="f(11)">第12关</button>
+        </div>
+        <div id="level4">
+            <!-- <button><a href="index.html?level=12">第13关</a></button>
+            <button><a href="index.html?level=13">第14关</a></button>
+            <button><a href="index.html?level=14">第15关</a></button>
+            <button><a href="index.html?level=15">第16关</a></button> -->
+            <button onclick="f(12)">第13关</button>
+            <button onclick="f(13)">第14关</button>
+            <button onclick="f(14)">第15关</button>
+            <button onclick="f(15)">第16关</button>
+        </div>
+     
+       
+        <button id="restart">
+            重新开始
+        </button><br>
+        <!-- <p id="rule">游戏规则：方向键↑，↓，←，→分别控制玩家坦克的向上，下，左，右移动。空格键发射炮弹。  </p> -->
+    </div>
+</body>
+
+</html>
+<script>
+
+    window.onload = function () {
+        document.getElementsByClassName('now')[0].innerHTML = `当前是第${parseInt(getQueryVariable('level')) + 1 || 1}关`;
+        document.getElementById('restart').addEventListener('click', function () {
+            let t = parseInt(level) + 1;
+            window.location.href = window.location.pathname + "?max=" + t;
+        })
+        
+    }
+    function f(a){
+      window,location.href="index.html?level="+a+"&Level="+parseInt(Level[0])+","+parseInt(Level[1])+","+parseInt(Level[2])+","+parseInt(Level[3])+","+parseInt(Level[4])+","+parseInt(Level[5])+","+parseInt(Level[6])+","+parseInt(Level[7])+","+parseInt(Level[8])+","+parseInt(Level[9])+","+parseInt(Level[10])+","+parseInt(Level[11])+","+parseInt(Level[12])+","+parseInt(Level[13])+","+parseInt(Level[14])+","+parseInt(Level[15]);
+    }
+    
+</script>
+<script src="./js/bullet.js"></script>
+<script src="./js/tree.js"></script>
+<script src="./js/map.js"></script>
+<script src="./js/tank.js"></script>
+<script src="./js/softWall.js"></script>
+<script src="./js/home.js"></script>
+<script src="./js/hardWall.js"></script>
+<script src="./js/mytank.js"></script>
+<script src="./js/bossTank.js"></script>
+<script src="./js/boss.js"></script>
+<!-- <script src="./js/invisibleTank.js"></script> -->
+<script src="./js/bomb.js"></script>
+<script src="./js/boss10.js"></script>
+<script src="./js/boss9.js"></script>
+<script src="./js/index.js"></script>
