@@ -13,11 +13,6 @@ class Tank {
             this.wholeLife = level;
             this.flag = 1; //0为我方坦克,1为敌方坦克
             this.canShot = true;
-            if(level==7){
-                this.life=4;
-                this.wholeLife=4;
-                this.speed=5;
-            }  
             document.querySelector('.map').appendChild(this.tank);
             return true;
         }
