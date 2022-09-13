@@ -386,13 +386,10 @@ else if (level == 9) {
     var e = new boss9(150, 450, 1);
     tankArray.push(e);
     e.autoFire();
-    var f = new boss9(450, 450, 1);
-    tankArray.push(f);
-    f.autoFire();
-    // var g=new boss9(50,50,1);
-    // tankArray.push(g);
-    // g.autoFire();
-
+    var g = new boss9(450, 450, 1);
+    tankArray.push(g);
+    g.autoFire();
+ 
 
 
 }
