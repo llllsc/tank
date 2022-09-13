@@ -235,6 +235,9 @@ else if (level == 7) {
             t = new Tank(x, y, parseInt(level));
             if (t.dirc != undefined) {
                 tankArray.push(t);
+                  t.life=4;
+                t.wholeLife=4;
+                t.speed=5;
                 t.autoMove();
                 i++;
             }
@@ -252,6 +255,9 @@ else if (level == 7) {
                     if (t.dirc != undefined) {
                         tankArray.push(t);
                         t.autoMove();
+                        t.life=4;
+                        t.wholeLife=4;
+                        t.speed=5;
                         tankNum++;
                         i++;
                     }
