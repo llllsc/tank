@@ -63,7 +63,7 @@ if (level < 6) {
     arr.push(new softWall(270, 620), new softWall(270, 590), new softWall(360, 620), new softWall(360, 590), new softWall(300, 590), new softWall(330, 590),);
     var map = new Map(arr);
 
-    var tank0 = new Mytank(500, 600, level);
+    var tank0 = new Mytank(500, 610, level);
     tank0.flag = 0;
 
     document.querySelector('.tank').className += " tank0";
