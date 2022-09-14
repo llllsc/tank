@@ -68,8 +68,7 @@
     window.onload = function () {
         document.getElementsByClassName('now')[0].innerHTML = `当前是第${parseInt(getQueryVariable('level')) + 1 || 1}关`;
         document.getElementById('restart').addEventListener('click', function () {
-            let t = parseInt(level) + 1;
-            window.location.href = window.location.pathname + "?max=" + t;
+            window.location.href = window.location.pathname;
         })
         
     }
