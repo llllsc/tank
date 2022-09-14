@@ -43,8 +43,11 @@ var Level=getQueryVariable2("Level");
 if(!Level) Level=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 for(let i=0;i<=15;i++){
-    if(Level[i]==1)
+    if(Level[i]==1){
+     document.getElementById(""+i).style.backgroundColor="#00FFFF";
     pass++;
+        
+    }
 }
  // let max = getQueryVariable("max");
 // if (!max) max = 0;
@@ -630,63 +633,63 @@ else if (level == 13) {
     Home.push(b);
     var t = new Tank(600, 0, 4)
     tankArray.push(t);
-    for (let i = 1; i <= 11; i++) {
-        let x = i * 50;
+     for (let i = 1; i <= 21; i++) {
+        let x = 20+i * 30;
         let y = 50;
         Home.push(new home(x, y));
     }
-    for (let i = 3; i <= 12; i++) {
+    for (let i = 5; i <= 21; i++) {
         let x = 550;
-        let y = i * 50;
+        let y = i * 30;
         Home.push(new home(x, y));
     }
-    for (let i = 2; i <= 11; i++) {
+    for (let i = 2; i <= 18; i++) {
         let x = 50;
-        let y = i * 50;
-        Home.push(new home(x, y));
-    }
-    for (let i = 3; i <= 7; i++) {
-        let x = 150;
-        let y = i * 50;
-        Home.push(new home(x, y));
-    }
-    for (let i = 2; i <= 5; i++) {
-        let x = 250;
-        let y = i * 50;
-        Home.push(new home(x, y));
-    }
-    for (let i = 7; i <= 12; i++) {
-        let x = 350;
-        let y = i * 50;
+        let y = 10+i * 30;
         Home.push(new home(x, y));
     }
     for (let i = 5; i <= 11; i++) {
-        let x = 450;
-        let y = i * 50;
+        let x = 150;
+        let y = i * 30;
         Home.push(new home(x, y));
     }
-    for (let i = 3; i <= 6; i++) {
-        let x = i * 50;
+    for (let i = 2; i <= 8; i++) {
+        let x = 250;
+        let y = 10+i * 30;
+        Home.push(new home(x, y));
+    }
+    for (let i = 11; i <= 20; i++) {
+        let x = 350;
+        let y = 20+i * 30;
+        Home.push(new home(x, y));
+    }
+    for (let i = 9; i <= 18; i++) {
+        let x = 450;
+        let y = 10+i * 30;
+        Home.push(new home(x, y));
+    }
+    for (let i = 5; i <= 11; i++) {
+        let x = i * 30;
         let y = 550;
         Home.push(new home(x, y));
     }
-    for (let i = 2; i <= 5; i++) {
-        let x = i * 50;
+    for (let i = 2; i <= 8; i++) {
+        let x = 10+i * 30;
         let y = 450;
         Home.push(new home(x, y));
     }
-    for (let i = 4; i <= 6; i++) {
-        let x = i * 50;
+    for (let i = 5; i <= 11; i++) {
+        let x = i * 30;
         let y = 350;
         Home.push(new home(x, y));
     }
-    for (let i = 6; i <= 9; i++) {
-        let x = i * 50;
+    for (let i = 9; i <= 15; i++) {
+        let x = i * 30;
         let y = 250;
         Home.push(new home(x, y));
     }
-    for (let i = 7; i <= 10; i++) {
-        let x = i * 50;
+    for (let i = 11; i <= 17; i++) {
+        let x = 10+i * 30;
         let y = 150;
         Home.push(new home(x, y));
     }
