@@ -957,23 +957,23 @@ else if (level == 15) {
 setInterval(() => {
     if (level != 11 && level != 14 && level != 15 && tankArray.length == 1 && tankArray[0].flag == 0) {
           Level[level]=1;
-        // window.location.href = `${window.location.pathname}?level=${parseInt(level) + 1}&max=${parseInt(max)}`;
+    
         window.location.href = `${window.location.pathname}?level=${parseInt(level) + 1}&Level=${parseInt(Level[0])},${parseInt(Level[1])},${parseInt(Level[2])},${parseInt(Level[3])},${parseInt(Level[4])},${parseInt(Level[5])},${parseInt(Level[6])},${parseInt(Level[7])},${parseInt(Level[8])},${parseInt(Level[9])},${parseInt(Level[10])},${parseInt(Level[11])},${parseInt(Level[12])},${parseInt(Level[13])},${parseInt(Level[14])},${parseInt(Level[15])}`;
 
     }
     else if (level == 11 && bulletArray.length == 0) {
-        // window.location.href = `${window.location.pathname}?level=${parseInt(level) + 1}&max=${parseInt(max)}`;
+       Level[level]=1;
         window.location.href = `${window.location.pathname}?level=${parseInt(level) + 1}&Level=${parseInt(Level[0])},${parseInt(Level[1])},${parseInt(Level[2])},${parseInt(Level[3])},${parseInt(Level[4])},${parseInt(Level[5])},${parseInt(Level[6])},${parseInt(Level[7])},${parseInt(Level[8])},${parseInt(Level[9])},${parseInt(Level[10])},${parseInt(Level[11])},${parseInt(Level[12])},${parseInt(Level[13])},${parseInt(Level[14])},${parseInt(Level[15])}`;
     }
     else if (level == 14 && allNum == 36 && tankArray.length == 1) {
-        // window.location.href = `${window.location.pathname}?level=${parseInt(level) + 1}&max=${parseInt(max)}`;
+        Level[level]=1;
         window.location.href = `${window.location.pathname}?level=${parseInt(level) + 1}&Level=${parseInt(Level[0])},${parseInt(Level[1])},${parseInt(Level[2])},${parseInt(Level[3])},${parseInt(Level[4])},${parseInt(Level[5])},${parseInt(Level[6])},${parseInt(Level[7])},${parseInt(Level[8])},${parseInt(Level[9])},${parseInt(Level[10])},${parseInt(Level[11])},${parseInt(Level[12])},${parseInt(Level[13])},${parseInt(Level[14])},${parseInt(Level[15])}`;
 
     }
     else if (level == 15 && arr.length == 0 && tank0.f == 0) {
         tank0.f = 1;
+         Level[level]=1;
         alert("恭喜通关!!!!!");
-        // window.location.href = `${window.location.pathname}?level=0&max=${parseInt(max)}`;
         window.location.href = `${window.location.pathname}?level=0&Level=${parseInt(Level[0])},${parseInt(Level[1])},${parseInt(Level[2])},${parseInt(Level[3])},${parseInt(Level[4])},${parseInt(Level[5])},${parseInt(Level[6])},${parseInt(Level[7])},${parseInt(Level[8])},${parseInt(Level[9])},${parseInt(Level[10])},${parseInt(Level[11])},${parseInt(Level[12])},${parseInt(Level[13])},${parseInt(Level[14])},${parseInt(Level[15])}`;
 
     }
